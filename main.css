@@ -13,6 +13,7 @@ a{
     color: black;
     text-decoration: none;
 }
+
 .container{
     max-width: 1080px;
     margin: auto;
@@ -38,10 +39,10 @@ a{
   text-shadow: 1px 2px 10px rgba(67,54,54,0.66);
 }
 
+
 #profile {
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 70px;
     text-align: center;
     align-items: center;
 }
@@ -49,9 +50,10 @@ a{
 #profile .avatar {
     flex-grow: 1;
     max-width: 50%;
+    margin-top: 70px;
 }
 
-.avatar img {
+#profile .avatar img {
     width: 80%;
     border-radius: 50%;
     border: 3px solid #ccc;
@@ -109,4 +111,69 @@ a{
 
 .social-media .facebook:hover {
     color : #2d487d;
+}
+
+#about {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;;
+}
+#about .info {
+    flex-grow: 1;
+    max-width: 50%;;
+}
+#about .avatar {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+#about .avatar img {
+    width: 70%;
+}
+
+#about h3 {
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+}
+
+#about p .text-hilight,
+#about p .text-skill {
+    background-color: yellow;
+    font-size: 13px;
+    padding: 2px 7px;
+}
+
+#about p .text-skill {
+    background-color: pink;
+}
+
+#about .skills {
+    display: flex;
+    font-size: 0px;
+}
+
+#about .skills .btn-group {
+    margin: 20px 20px 0 0;
+}
+
+#about .skills .btn-group button {
+    padding: 5px 10px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#about .skills .btn-group button:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+#about .skills .btn-group button:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.set-pink{
+    background-color: pink !important;
+}
+.set-green{
+    background-color: green !important;
 }
